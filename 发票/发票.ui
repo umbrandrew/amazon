@@ -19,13 +19,16 @@
      <rect>
       <x>150</x>
       <y>230</y>
-      <width>551</width>
-      <height>91</height>
+      <width>601</width>
+      <height>101</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
      <property name="labelAlignment">
       <set>Qt::AlignCenter</set>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
      </property>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
@@ -98,10 +101,32 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0" colspan="2">
+     <item row="2" column="0">
       <widget class="QPushButton" name="pushButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>生成发票</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>录入共享表格</string>
        </property>
       </widget>
      </item>
